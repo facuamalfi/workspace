@@ -1,0 +1,275 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales */
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    width: 100%;
+}
+
+footer{
+    margin-top: auto;
+    color: white;
+    background-color: #282828;
+}
+
+/* header */
+
+/* estilos desactivados por bootstrap */
+
+/* header{
+    display: flex;
+    background-color: #282828;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+} */
+
+/* header nav ul{ 
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    font-weight: bold;
+    padding-right: 20px;
+} */
+
+/* pagina principal */
+
+.titulo{
+    font-size: 100px;
+    color: whitesmoke;
+    letter-spacing: 5px;
+    text-shadow: 5px 5px 5px black;
+}
+
+.fondo{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/uno.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* titulo principal de los proyectos */
+
+.proyectos{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.tituloproyectos{
+    font-size: 50px;
+    letter-spacing: 20px;
+}
+
+/* proyecto uno */
+
+.sectionuno{
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.parrafouno{
+    padding: 15vh;
+}
+
+.titulouno{
+    padding-bottom: 20px;
+}
+
+/* proyecto dos */
+
+.sectiondos{
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafodos{
+    padding: 15vh;
+}
+
+.titulodos{
+    padding-bottom: 20px;
+}
+
+/* titulo de los servicios */
+
+.servicios{
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px;
+}
+
+.tituloservicios{
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+/* bloque de servicios */
+
+.sectionservicios{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(2, 50%);
+    padding: 5vh;
+    row-gap: 20px;
+    }
+
+.titulodiseño{
+    display: flex;
+    padding: 5px;
+}
+
+.tituloobra{
+    display: flex;
+    padding: 5px;
+}
+
+/* nosotros */
+
+.nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 1;
+    margin: 50px;
+    align-items: center;
+    }
+
+.titulonosotros{
+    font-size: 40px;
+}
+
+.parrafonosotros{
+    padding: 20px;
+}
+
+/* contacto */
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    gap: 3rem;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* estilos de header bootstrap */
+
+.navbar{
+    background-color: #282828 !important;
+}
+
+/* estilos para mobile */
+
+@media screen and (max-width:800px){
+    
+    /* header{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    header nav ul{
+        font-size: 10px;
+        gap: 15px;
+        padding: 15px;
+    } */
+
+    main{
+        width: 100%;
+    }
+
+    .cajatitulo{
+        width: 100vh;
+    }
+
+    .titulo{
+        font-size: 10px;
+    }
+
+    .tituloproyectos{
+       font-size: 30px;
+       font-weight: bold;
+       margin: 10px;
+       letter-spacing: 1rem;
+    }
+
+    .sectionuno{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .parrafouno{
+        padding: 5vh;
+    }
+
+    .sectiondos{
+        display: flex;
+        flex-direction: column-reverse
+    }
+
+    .parrafodos{
+        padding: 5vh;
+    }
+
+    .nosotros{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .titulonosotros{
+        padding: 10px;
+    }
+
+    .imgnosotros{
+        width: 90%;
+        padding-bottom: 50px;
+    }
+
+    .contacto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactoimg{
+        width: 100%;
+    }
+
+    .texto{
+        gap: 1rem;
+    }
+
+}
+
