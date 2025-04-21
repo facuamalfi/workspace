@@ -1,342 +1,274 @@
+@charset "UTF-8";
 /* reset */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* estilos generales */
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #d2b19d;
+}
 
-body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
+/* estilos header */
+header .navbar {
+  background-color: #282828 !important;
+}
+
+/* estilos main */
+main {
+  width: 100%;
+}
+main .titulo {
+  font-size: 40px;
+  color: white;
+  letter-spacing: 5px;
+  text-shadow: 5px 5px 5px black;
+}
+main .fondo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  background: url(../img/uno.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* estilos footer */
+footer {
+  margin-top: auto;
+  color: white;
+  background-color: #282828;
+}
+footer .foot {
+  font-size: 10px;
+  margin-top: 15px;
+}
+
+/* estilos proyectos */
+main .proyectos {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+}
+main .tituloproyectos {
+  font-size: 50px;
+  letter-spacing: 20px;
+}
+main .sectionuno {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  grid-template-rows: 1;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 50px;
+}
+main .parrafouno {
+  padding: 0 80px;
+}
+main .titulouno {
+  padding-bottom: 20px;
+}
+main .sectiondos {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  grid-template-rows: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  padding: 50px 0;
+}
+main .parrafodos {
+  padding: 0 80px;
+}
+main .titulodos {
+  padding-bottom: 20px;
+}
+
+/* estilos servicios */
+main .servicios {
+  display: flex;
+  justify-content: flex-start;
+  padding: 30px;
+}
+main .tituloservicios {
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+main .sectionservicios {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: repeat(2, 40%);
+  padding: 5vh;
+  row-gap: 20px;
+  gap: 50px;
+}
+main .titulodiseño {
+  display: flex;
+  padding: 5px;
+}
+main .tituloobra {
+  display: flex;
+  padding: 5px;
+}
+
+/* estilos nosotros */
+main .nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 1;
+  margin: 50px;
+  align-items: center;
+}
+main .titulonosotros {
+  font-size: 40px;
+}
+main .parrafonosotros {
+  padding: 40px;
+}
+
+/* estilos contacto */
+main .contacto {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin: 50px;
+  gap: 3rem;
+}
+main .texto {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* estilos mobile */
+@media screen and (max-width: 576px) {
+  main .titulo {
+    font-size: 12px;
+  }
+  main .tituloproyectos {
+    font-size: 30px;
+    letter-spacing: 1rem;
+  }
+  main .sectionuno {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    background-color: #DDD0C8;
-}
-
-main{
-    width: 100%;
-}
-
-footer{
-    margin-top: auto;
-    color: white;
-    background-color: #282828;
-}
-
-.foot{
-    font-size: 10px;
-    margin-top: 15px;
-}
-
-/* pagina principal */
-
-.titulo{
-    font-size: 40px;
-    color: whitesmoke;
-    letter-spacing: 5px;
-    text-shadow: 5px 5px 5px black;
-}
-
-.fondo{
-    width: 100%;
-    height: 80vh;
+    width: 75%;
+    gap: 50px;
+  }
+  main .parrafouno {
+    padding: 0 5px;
+  }
+  main .sectiondos {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url(../img/uno.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-/* titulo principal de los proyectos */
-
-.proyectos{
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  main .parrafodos {
+    padding: 0 5px;
+  }
+  main .sectionservicios {
+    row-gap: 150px;
+  }
+  main .nosotros {
     display: flex;
-    justify-content: center;
-    padding: 20px;
+    flex-direction: column;
     margin: 20px;
-}
-
-.tituloproyectos{
-    font-size: 50px;
-    letter-spacing: 20px;
-}
-
-/* proyecto uno */
-
-.sectionuno{
-    display: grid;
-    grid-template-columns: repeat(2, 40%);
-    grid-template-rows: 1;
-    justify-content: center;
-    align-items: center;
+  }
+  main .titulonosotros {
+    padding: 10px;
+  }
+  main .imgnosotros {
     width: 90%;
-    margin: 50px;
-}
-
-.parrafouno{
-    padding: 0 80px;
-}
-
-.titulouno{
-    padding-bottom: 20px;
-}
-
-/* proyecto dos */
-
-.sectiondos{
+    padding-bottom: 50px;
+  }
+  main .contacto {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  main .texto {
     display: grid;
     grid-template-columns: repeat(2, 40%);
     grid-template-rows: 1;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    padding: 50px 0;
+    margin: 0px;
+    gap: 20px;
+  }
+  main .contactoimg {
+    width: 100%;
+  }
 }
-
-.parrafodos{
-    padding: 0 80px;
-}
-
-.titulodos{
-    padding-bottom: 20px;
-}
-
-/* titulo de los servicios */
-
-.servicios{
-    display: flex;
-    justify-content: flex-start;
-    padding: 30px;
-}
-
-.tituloservicios{
+/* estilos tablet */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  main {
     font-size: 20px;
-    letter-spacing: 3px;
-}
-
-/* bloque de servicios */
-
-.sectionservicios{
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: repeat(2, 50%);
-    padding: 5vh;
-    row-gap: 20px;
-    gap: 50px;
-    }
-
-.titulodiseño{
-    display: flex;
-    padding: 5px;
-}
-
-.tituloobra{
-    display: flex;
-    padding: 5px;
-}
-
-/* nosotros */
-
-.nosotros{
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 1;
-    margin: 50px;
-    align-items: center;
-    }
-
-.titulonosotros{
-    font-size: 40px;
-}
-
-.parrafonosotros{
-    padding: 40px;
-}
-
-/* contacto */
-
-.contacto{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    gap: 3rem;
-}
-
-.texto{
+  }
+  main .fondo {
+    height: 90vh;
+  }
+  main .titulo {
+    font-size: 30px;
+  }
+  main .tituloproyectos {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px;
+    letter-spacing: 1rem;
+  }
+  main .sectionuno {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-}
-
-/* estilos de header bootstrap */
-
-.navbar{
-    background-color: #282828 !important;
-}
-
-/* estilos para mobile */
-
-@media screen and (max-width:576px){
-
-    main{
-        width: 100%;
-    }
-
-    .titulo{
-        font-size: 12px;
-    }
-
-    .tituloproyectos{
-       font-size: 30px;
-       letter-spacing: 1rem;
-    }
-
-    .sectionuno{
-        display: flex;
-        flex-direction: column;
-        width: 75%;
-        gap: 50px;
-    }
-
-    .parrafouno{
-        padding: 0 5px;
-    }
-
-    .sectiondos{
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 50px;
-    }
-
-    .parrafodos{
-        padding: 0 5px;
-    }
-
-    .nosotros{
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
-    }
-
-    .titulonosotros{
-        padding: 10px;
-    }
-
-    .imgnosotros{
-        width: 90%;
-        padding-bottom: 50px;
-    }
-
-    .contacto{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .texto{
-        display: grid;
-        grid-template-columns: repeat(2, 40%);
-        grid-template-rows: 1;
-        margin: 0px;
-        gap: 20px;
-    }
-
-    .contactoimg{
-        width: 100%;
-    }
-
-}
-
-/* estilos para tablet */
-
-@media screen and (min-width:576px) and (max-width:992px){
-
-    main{
-        width: 100%;
-    }
-
-    .fondo{
-        height: 90vh;
-    }
-
-    .titulo{
-        font-size: 30px;
-    }
-
-    .tituloproyectos{
-        font-size: 50px;
-        font-weight: bold;
-        margin: 20px;
-        letter-spacing: 1rem;
-     }
-    
-    .sectionuno{
+    gap: 50px;
+  }
+  main .parrafouno {
+    padding: 0 5px;
+  }
+  main .sectiondos {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  main .parrafodos {
+    padding: 0 5px;
+  }
+  main .sectionservicios {
+    row-gap: 100px;
+  }
+  main .nosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  main .parrafonosotros {
+    margin: 0 100px;
+  }
+  main .imgnosotros {
+    padding-top: 30px;
+  }
+  main .contacto {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  main .texto {
     display: grid;
     grid-template-columns: repeat(2, 40%);
-    grid-template-rows: 1;
-    width: 90%;
-    gap: 50px;
-    }
-
-    .parrafouno{
-        padding: 0 5px;
-    }
-
-    .titulouno{
-        padding-bottom: 5px;
-    }
-
-    .sectiondos{
-        display: grid;
-        grid-template-columns: repeat(2, 40%);
-        grid-template-rows: 1;
-        gap: 50px;
-    }
-    
-    .parrafodos{
-        padding: 0 5px;
-    }
-    
-    .titulodos{
-        padding-bottom: 5px;
-    }
-
-    .nosotros{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .parrafonosotros{
-        margin: 0 100px;
-    }
-
-    .imgnosotros{
-        padding-top: 30px;
-    }
-
-    .contacto{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .texto{
-        display: grid;
-        grid-template-columns: repeat(2, 40%);
-        margin: 50px;
-    }
-
-    .redes{
-        padding: 30px;
-    }
-
-    .job{
-        padding: 30px;
-    }
-
+    margin: 50px;
+  }
+  main .redes {
+    padding: 30px;
+  }
+  main .job {
+    padding: 30px;
+  }
 }
+
+/*# sourceMappingURL=styles.css.map */

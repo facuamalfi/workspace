@@ -1,0 +1,43 @@
+// mixin
+
+@import "../abstracts/mixin";
+
+/* estilos proyectos */
+
+main{
+    .proyectos{
+        @include flex;
+        padding: 20px;
+        margin: 20px;
+    }
+    .tituloproyectos{
+        font-size: 50px;
+        letter-spacing: 20px;
+    }
+    .sectionuno{
+        @include grid (grid, repeat(2, 40%), 1);
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 50px;
+    }
+    .parrafouno{
+        padding: 0 80px;
+    }
+    .titulouno{
+        padding-bottom: 20px;
+    }
+    .sectiondos{
+        @include grid (grid, repeat(2, 40%), 1);
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+        padding: 50px 0;
+    }
+    .parrafodos{
+        padding: 0 80px;
+    }
+    .titulodos{
+        padding-bottom: 20px;
+    }
+}

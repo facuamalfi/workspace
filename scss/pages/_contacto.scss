@@ -1,0 +1,20 @@
+// mixin
+
+@import "../abstracts/mixin";
+
+/* estilos contacto */
+
+main{
+    .contacto{
+        @include flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 50px;
+        gap: 3rem;
+    }
+    .texto{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+}

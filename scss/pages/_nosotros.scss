@@ -1,0 +1,19 @@
+// mixin
+
+@import "../abstracts/mixin";
+
+/* estilos nosotros */
+
+main{
+    .nosotros{
+        @include grid (grid, repeat(2, 50%), 1);
+        margin: 50px;
+        align-items: center;
+    }
+    .titulonosotros{
+        font-size: 40px;
+    }
+    .parrafonosotros{
+        padding: 40px;
+    }
+}

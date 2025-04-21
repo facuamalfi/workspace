@@ -1,0 +1,31 @@
+// mixin
+
+@import "../abstracts/mixin";
+
+/* estilos servicios */
+
+main{
+    .servicios{
+        display: flex;
+        justify-content: flex-start;
+        padding: 30px;
+    }
+    .tituloservicios{
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    .sectionservicios{
+        @include grid (grid, 1, repeat(2, 40%));
+        padding: 5vh;
+        row-gap: 20px;
+        gap: 50px;
+    }
+    .titulodiseño{
+        display: flex;
+        padding: 5px;
+    }
+    .tituloobra{
+        display: flex;
+        padding: 5px;
+    }
+}

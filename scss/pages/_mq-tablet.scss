@@ -1,0 +1,67 @@
+// mixin
+
+@import "../abstracts/mixin";
+
+/* estilos tablet */
+
+@media screen and (min-width:576px) and (max-width:992px){
+    main{
+        font-size: 20px;
+        .fondo{
+            height: 90vh;
+        }
+        .titulo{
+            font-size: 30px;
+        }
+        .tituloproyectos{
+            font-size: 50px;
+            font-weight: bold;
+            margin: 20px;
+            letter-spacing: 1rem;
+        }
+        .sectionuno{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .parrafouno{
+            padding: 0 5px;
+        }
+        .sectiondos{
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 50px;
+        }
+        .parrafodos{
+            padding: 0 5px;
+        }
+        .sectionservicios{
+            row-gap: 100px;
+        }
+        .nosotros{
+            display: flex;
+            flex-direction: column;
+        }
+        .parrafonosotros{
+            margin: 0 100px;
+        }
+        .imgnosotros{
+            padding-top: 30px;
+        }
+        .contacto{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .texto{
+            display: grid;
+            grid-template-columns: repeat(2, 40%);
+            margin: 50px;
+        }
+        .redes{
+            padding: 30px;
+        }
+        .job{
+            padding: 30px;
+        }
+    }
+}
