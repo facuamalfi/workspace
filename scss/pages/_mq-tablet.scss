@@ -51,17 +51,16 @@
         .contacto{
             display: flex;
             flex-direction: column-reverse;
+            gap: 4rem;
         }
         .texto{
             display: grid;
             grid-template-columns: repeat(2, 40%);
-            margin: 50px;
+            grid-template-rows: repeat(2, 30%);
+            margin: 20px;
         }
-        .redes{
-            padding: 30px;
-        }
-        .job{
-            padding: 30px;
+        .titulocontacto{
+            grid-column: span 2;
         }
     }
 }

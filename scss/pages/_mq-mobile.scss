@@ -48,11 +48,17 @@
         .contacto{
             display: flex;
             flex-direction: column-reverse;
+            gap: 3rem;
+            font-size: 15px;
         }
         .texto{
-            @include grid (grid, repeat(2, 40%), 1);
-            margin: 0px;
-            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 45%);
+            grid-template-rows: repeat(2, 30%);
+            gap: 1rem;
+        }
+        .titulocontacto{
+            grid-column: span 2;
         }
         .contactoimg{
             width: 100%;

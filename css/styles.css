@@ -37,7 +37,7 @@ main .fondo {
   align-items: center;
   width: 100%;
   height: 80vh;
-  background: url(../img/uno.jpg);
+  background: url(../img/fondo.png);
   background-size: cover;
   background-position: center;
 }
@@ -144,12 +144,12 @@ main .contacto {
   flex-direction: row;
   align-items: center;
   margin: 50px;
-  gap: 3rem;
+  gap: 10rem;
 }
 main .texto {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 /* estilos mobile */
@@ -196,13 +196,17 @@ main .texto {
   main .contacto {
     display: flex;
     flex-direction: column-reverse;
+    gap: 3rem;
+    font-size: 15px;
   }
   main .texto {
     display: grid;
-    grid-template-columns: repeat(2, 40%);
-    grid-template-rows: 1;
-    margin: 0px;
-    gap: 20px;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(2, 30%);
+    gap: 1rem;
+  }
+  main .titulocontacto {
+    grid-column: span 2;
   }
   main .contactoimg {
     width: 100%;
@@ -257,17 +261,16 @@ main .texto {
   main .contacto {
     display: flex;
     flex-direction: column-reverse;
+    gap: 4rem;
   }
   main .texto {
     display: grid;
     grid-template-columns: repeat(2, 40%);
-    margin: 50px;
+    grid-template-rows: repeat(2, 30%);
+    margin: 20px;
   }
-  main .redes {
-    padding: 30px;
-  }
-  main .job {
-    padding: 30px;
+  main .titulocontacto {
+    grid-column: span 2;
   }
 }
 
