@@ -16,9 +16,10 @@ main{
     }
     .sectionservicios{
         @include grid (grid, 1, repeat(2, 40%));
-        padding: 5vh;
-        row-gap: 20px;
-        gap: 50px;
+        padding: 50px;
+        font-size: 25px;
+        text-align: left;
+        gap: 5rem;
     }
     .titulodiseño{
         display: flex;

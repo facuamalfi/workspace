@@ -6,7 +6,6 @@
 
 @media screen and (min-width:576px) and (max-width:992px){
     main{
-        font-size: 20px;
         .fondo{
             height: 90vh;
         }
@@ -14,36 +13,36 @@
             font-size: 30px;
         }
         .tituloproyectos{
-            font-size: 50px;
-            font-weight: bold;
-            margin: 20px;
-            letter-spacing: 1rem;
+            font-size: 60px;
+            letter-spacing: 5px;
         }
         .sectionuno{
-            display: flex;
+            @include flex;
             flex-direction: column;
+            width: 90%;
             gap: 50px;
         }
         .parrafouno{
-            padding: 0 5px;
+            padding: 40px;
         }
         .sectiondos{
-            display: flex;
+            @include flex;
             flex-direction: column-reverse;
+            width: 100%;
             gap: 50px;
         }
         .parrafodos{
-            padding: 0 5px;
+            padding: 100px;
         }
         .sectionservicios{
-            row-gap: 100px;
+            row-gap: 150px;
         }
         .nosotros{
             display: flex;
             flex-direction: column;
         }
-        .parrafonosotros{
-            margin: 0 100px;
+        .textonosotros{
+            padding: 60px;
         }
         .imgnosotros{
             padding-top: 30px;

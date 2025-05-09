@@ -13,7 +13,12 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #d2b19d;
+  background-color: white;
+}
+
+a {
+  color: #282828;
+  text-decoration: none;
 }
 
 /* estilos header */
@@ -26,7 +31,7 @@ main {
   width: 100%;
 }
 main .titulo {
-  font-size: 40px;
+  font-size: 50px;
   color: white;
   letter-spacing: 5px;
   text-shadow: 5px 5px 5px black;
@@ -57,12 +62,11 @@ footer .foot {
 main .proyectos {
   display: flex;
   justify-content: center;
-  padding: 20px;
-  margin: 20px;
+  padding: 50px;
+  margin: 5px;
 }
 main .tituloproyectos {
-  font-size: 50px;
-  letter-spacing: 20px;
+  font-size: 80px;
 }
 main .sectionuno {
   display: grid;
@@ -72,9 +76,12 @@ main .sectionuno {
   align-items: center;
   width: 90%;
   margin: 50px;
+  gap: 10rem;
 }
 main .parrafouno {
-  padding: 0 80px;
+  padding: 0 18px;
+  font-size: 25px;
+  text-align: left;
 }
 main .titulouno {
   padding-bottom: 20px;
@@ -85,11 +92,14 @@ main .sectiondos {
   grid-template-rows: 1;
   justify-content: center;
   align-items: center;
-  margin: 50px;
-  padding: 50px 0;
+  width: 90%;
+  margin: 100px 0;
+  gap: 5rem;
 }
 main .parrafodos {
-  padding: 0 80px;
+  padding: 0 18px;
+  font-size: 25px;
+  text-align: left;
 }
 main .titulodos {
   padding-bottom: 20px;
@@ -109,9 +119,10 @@ main .sectionservicios {
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: repeat(2, 40%);
-  padding: 5vh;
-  row-gap: 20px;
-  gap: 50px;
+  padding: 50px;
+  font-size: 25px;
+  text-align: left;
+  gap: 5rem;
 }
 main .titulodiseño {
   display: flex;
@@ -130,11 +141,10 @@ main .nosotros {
   margin: 50px;
   align-items: center;
 }
-main .titulonosotros {
-  font-size: 40px;
-}
-main .parrafonosotros {
-  padding: 40px;
+main .textonosotros {
+  font-size: 25px;
+  text-align: left;
+  padding: 20px;
 }
 
 /* estilos contacto */
@@ -159,35 +169,52 @@ main .texto {
   }
   main .tituloproyectos {
     font-size: 30px;
-    letter-spacing: 1rem;
+    letter-spacing: 5px;
   }
   main .sectionuno {
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    width: 75%;
-    gap: 50px;
+    width: 100%;
+    gap: 3rem;
+    margin: 0px;
+    padding: 10px;
   }
   main .parrafouno {
-    padding: 0 5px;
+    font-size: 15px;
+  }
+  main .imagenuno img {
+    width: 90%;
   }
   main .sectiondos {
     display: flex;
+    justify-content: center;
     flex-direction: column-reverse;
-    gap: 50px;
+    width: 100%;
+    gap: 3rem;
+    margin: 0px;
+    padding: 10px;
   }
   main .parrafodos {
-    padding: 0 5px;
+    padding: 0 20px;
+    font-size: 15px;
+  }
+  main .imagendos img {
+    width: 90%;
   }
   main .sectionservicios {
-    row-gap: 150px;
+    row-gap: 8rem;
+    font-size: 15px;
+    padding: 30px;
   }
   main .nosotros {
     display: flex;
     flex-direction: column;
     margin: 20px;
   }
-  main .titulonosotros {
-    padding: 10px;
+  main .textonosotros {
+    padding: 20px;
+    font-size: 15px;
   }
   main .imgnosotros {
     width: 90%;
@@ -214,9 +241,6 @@ main .texto {
 }
 /* estilos tablet */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  main {
-    font-size: 20px;
-  }
   main .fondo {
     height: 90vh;
   }
@@ -224,36 +248,38 @@ main .texto {
     font-size: 30px;
   }
   main .tituloproyectos {
-    font-size: 50px;
-    font-weight: bold;
-    margin: 20px;
-    letter-spacing: 1rem;
+    font-size: 60px;
+    letter-spacing: 5px;
   }
   main .sectionuno {
     display: flex;
+    justify-content: center;
     flex-direction: column;
+    width: 90%;
     gap: 50px;
   }
   main .parrafouno {
-    padding: 0 5px;
+    padding: 40px;
   }
   main .sectiondos {
     display: flex;
+    justify-content: center;
     flex-direction: column-reverse;
+    width: 100%;
     gap: 50px;
   }
   main .parrafodos {
-    padding: 0 5px;
+    padding: 100px;
   }
   main .sectionservicios {
-    row-gap: 100px;
+    row-gap: 150px;
   }
   main .nosotros {
     display: flex;
     flex-direction: column;
   }
-  main .parrafonosotros {
-    margin: 0 100px;
+  main .textonosotros {
+    padding: 60px;
   }
   main .imgnosotros {
     padding-top: 30px;
